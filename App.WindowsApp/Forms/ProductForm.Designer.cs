@@ -88,7 +88,7 @@
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
             label1.Size = new Size(39, 15);
-            label1.TabIndex = 0;
+            label1.TabIndex = 6;
             label1.Text = "Name";
             // 
             // label2
@@ -97,7 +97,7 @@
             label2.Location = new Point(3, 50);
             label2.Name = "label2";
             label2.Size = new Size(55, 15);
-            label2.TabIndex = 1;
+            label2.TabIndex = 7;
             label2.Text = "Category";
             // 
             // label3
@@ -106,7 +106,7 @@
             label3.Location = new Point(3, 100);
             label3.Name = "label3";
             label3.Size = new Size(33, 15);
-            label3.TabIndex = 2;
+            label3.TabIndex = 8;
             label3.Text = "Price";
             // 
             // label4
@@ -115,7 +115,7 @@
             label4.Location = new Point(3, 150);
             label4.Name = "label4";
             label4.Size = new Size(36, 15);
-            label4.TabIndex = 3;
+            label4.TabIndex = 9;
             label4.Text = "Stock";
             // 
             // label5
@@ -124,7 +124,7 @@
             label5.Location = new Point(3, 200);
             label5.Name = "label5";
             label5.Size = new Size(39, 15);
-            label5.TabIndex = 4;
+            label5.TabIndex = 10;
             label5.Text = "Status";
             // 
             // label6
@@ -133,7 +133,7 @@
             label6.Location = new Point(3, 250);
             label6.Name = "label6";
             label6.Size = new Size(18, 15);
-            label6.TabIndex = 5;
+            label6.TabIndex = 11;
             label6.Text = "ID";
             // 
             // txtName
@@ -142,7 +142,7 @@
             txtName.Location = new Point(163, 3);
             txtName.Name = "txtName";
             txtName.Size = new Size(634, 23);
-            txtName.TabIndex = 6;
+            txtName.TabIndex = 0;
             // 
             // cmbCat
             // 
@@ -151,7 +151,7 @@
             cmbCat.Location = new Point(163, 53);
             cmbCat.Name = "cmbCat";
             cmbCat.Size = new Size(634, 23);
-            cmbCat.TabIndex = 7;
+            cmbCat.TabIndex = 1;
             cmbCat.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // nuPrice
@@ -160,7 +160,7 @@
             nuPrice.Location = new Point(163, 103);
             nuPrice.Name = "nuPrice";
             nuPrice.Size = new Size(634, 23);
-            nuPrice.TabIndex = 8;
+            nuPrice.TabIndex = 2;
             // 
             // nuStock
             // 
@@ -168,7 +168,7 @@
             nuStock.Location = new Point(163, 153);
             nuStock.Name = "nuStock";
             nuStock.Size = new Size(634, 23);
-            nuStock.TabIndex = 9;
+            nuStock.TabIndex = 3;
             // 
             // cmbProductStatus
             // 
@@ -177,7 +177,7 @@
             cmbProductStatus.Location = new Point(163, 203);
             cmbProductStatus.Name = "cmbProductStatus";
             cmbProductStatus.Size = new Size(634, 23);
-            cmbProductStatus.TabIndex = 10;
+            cmbProductStatus.TabIndex = 4;
             // 
             // txtId
             // 
@@ -186,7 +186,7 @@
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(634, 23);
-            txtId.TabIndex = 11;
+            txtId.TabIndex = 5;
             // 
             // flowLayoutPanel1
             // 
@@ -204,7 +204,7 @@
             Cancel.Location = new Point(691, 3);
             Cancel.Name = "Cancel";
             Cancel.Size = new Size(106, 38);
-            Cancel.TabIndex = 0;
+            Cancel.TabIndex = 1;
             Cancel.Text = "Cancel";
             Cancel.UseVisualStyleBackColor = true;
             // 
@@ -214,7 +214,7 @@
             btnSave.Location = new Point(610, 3);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(75, 38);
-            btnSave.TabIndex = 1;
+            btnSave.TabIndex = 0;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;

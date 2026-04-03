@@ -207,6 +207,7 @@
             Cancel.TabIndex = 1;
             Cancel.Text = "Cancel";
             Cancel.UseVisualStyleBackColor = true;
+            Cancel.Click += Cancel_Click;
             // 
             // btnSave
             // 
@@ -229,6 +230,7 @@
             Name = "ProductForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ProductForm";
+            FormClosing += ProductForm_FormClosing;
             Load += ProductForm_Load;
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();

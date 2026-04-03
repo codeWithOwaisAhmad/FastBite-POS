@@ -82,7 +82,6 @@
             tblProducts.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tblProducts.Size = new Size(489, 283);
             tblProducts.TabIndex = 0;
-            tblProducts.Paint += tblProducts_Paint;
             // 
             // pnlToolbar
             // 
@@ -106,7 +105,6 @@
             toolStrip.Size = new Size(459, 37);
             toolStrip.TabIndex = 0;
             toolStrip.Text = "toolStrip1";
-            toolStrip.ItemClicked += toolStrip_ItemClicked;
             // 
             // tbAdd
             // 
@@ -221,6 +219,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(172, 23);
             txtSearch.TabIndex = 0;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // cmbCategory
             // 
@@ -231,6 +230,7 @@
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(128, 23);
             cmbCategory.TabIndex = 1;
+            cmbCategory.TextChanged += cmbCategory_TextChanged;
             // 
             // cmbStock
             // 
@@ -241,6 +241,7 @@
             cmbStock.Name = "cmbStock";
             cmbStock.Size = new Size(129, 23);
             cmbStock.TabIndex = 2;
+            cmbStock.SelectedIndexChanged += cmbStock_SelectedIndexChanged;
             // 
             // lblSearch
             // 

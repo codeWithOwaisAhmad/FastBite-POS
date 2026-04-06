@@ -29,303 +29,341 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.flpRight = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblUser = new System.Windows.Forms.Label();
-            this.flpLeft = new System.Windows.Forms.FlowLayoutPanel();
-            this.pnlContent = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.pnlSidebar = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnProducts = new System.Windows.Forms.Button();
-            this.btnOrders = new System.Windows.Forms.Button();
-            this.btnReports = new System.Windows.Forms.Button();
-            this.btnSync = new System.Windows.Forms.Button();
-            this.btnLogs = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pnlHeader.SuspendLayout();
-            this.flpRight.SuspendLayout();
-            this.flpLeft.SuspendLayout();
-            this.pnlContent.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
-            this.pnlSidebar.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            this.SuspendLayout();
+            pnlHeader = new Panel();
+            flpRight = new FlowLayoutPanel();
+            pictureBox2 = new PictureBox();
+            lblUser = new Label();
+            flpLeft = new FlowLayoutPanel();
+            pbLogo = new PictureBox();
+            pnlContent = new Panel();
+            label1 = new Label();
+            statusStrip1 = new StatusStrip();
+            lblStatus = new ToolStripStatusLabel();
+            pnlSidebar = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            btnDashboard = new Button();
+            btnProducts = new Button();
+            btnOrders = new Button();
+            btnReports = new Button();
+            btnSync = new Button();
+            btnLogs = new Button();
+            btnSettings = new Button();
+            btnCustomer = new Button();
+            pnlHeader.SuspendLayout();
+            flpRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            flpLeft.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
+            pnlContent.SuspendLayout();
+            statusStrip1.SuspendLayout();
+            pnlSidebar.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // pnlHeader
             // 
-            this.pnlHeader.Controls.Add(this.flpRight);
-            this.pnlHeader.Controls.Add(this.flpLeft);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1691, 67);
-            this.pnlHeader.TabIndex = 0;
+            pnlHeader.Controls.Add(flpRight);
+            pnlHeader.Controls.Add(flpLeft);
+            pnlHeader.Dock = DockStyle.Top;
+            pnlHeader.Location = new Point(0, 0);
+            pnlHeader.Margin = new Padding(2, 2, 2, 2);
+            pnlHeader.Name = "pnlHeader";
+            pnlHeader.Size = new Size(1066, 50);
+            pnlHeader.TabIndex = 0;
             // 
             // flpRight
             // 
-            this.flpRight.Controls.Add(this.pictureBox2);
-            this.flpRight.Controls.Add(this.lblUser);
-            this.flpRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.flpRight.Location = new System.Drawing.Point(1569, 0);
-            this.flpRight.Name = "flpRight";
-            this.flpRight.Size = new System.Drawing.Size(122, 67);
-            this.flpRight.TabIndex = 1;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblUser.Location = new System.Drawing.Point(63, 0);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(54, 50);
-            this.lblUser.TabIndex = 2;
-            this.lblUser.Text = "Admin";
-            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flpLeft
-            // 
-            this.flpLeft.Controls.Add(this.pbLogo);
-            this.flpLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flpLeft.Location = new System.Drawing.Point(0, 0);
-            this.flpLeft.Name = "flpLeft";
-            this.flpLeft.Size = new System.Drawing.Size(199, 67);
-            this.flpLeft.TabIndex = 0;
-            // 
-            // pnlContent
-            // 
-            this.pnlContent.Controls.Add(this.label1);
-            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(200, 67);
-            this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1491, 521);
-            this.pnlContent.TabIndex = 2;
-            this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 1;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lblStatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 588);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1691, 32);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(1676, 25);
-            this.lblStatus.Spring = true;
-            this.lblStatus.Text = "Ready";
-            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
-            // 
-            // pnlSidebar
-            // 
-            this.pnlSidebar.Controls.Add(this.flowLayoutPanel1);
-            this.pnlSidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSidebar.Location = new System.Drawing.Point(0, 67);
-            this.pnlSidebar.Name = "pnlSidebar";
-            this.pnlSidebar.Size = new System.Drawing.Size(200, 521);
-            this.pnlSidebar.TabIndex = 3;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnDashboard);
-            this.flowLayoutPanel1.Controls.Add(this.btnProducts);
-            this.flowLayoutPanel1.Controls.Add(this.btnOrders);
-            this.flowLayoutPanel1.Controls.Add(this.btnReports);
-            this.flowLayoutPanel1.Controls.Add(this.btnSync);
-            this.flowLayoutPanel1.Controls.Add(this.btnLogs);
-            this.flowLayoutPanel1.Controls.Add(this.btnSettings);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 521);
-            this.flowLayoutPanel1.TabIndex = 2;
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Image = global::App.WindowsApp.Properties.Resources.Dashboard;
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(3, 3);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(159, 60);
-            this.btnDashboard.TabIndex = 7;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // btnProducts
-            // 
-            this.btnProducts.FlatAppearance.BorderSize = 0;
-            this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProducts.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProducts.Image = global::App.WindowsApp.Properties.Resources.Products;
-            this.btnProducts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.Location = new System.Drawing.Point(3, 69);
-            this.btnProducts.Name = "btnProducts";
-            this.btnProducts.Size = new System.Drawing.Size(142, 57);
-            this.btnProducts.TabIndex = 8;
-            this.btnProducts.Text = "Products";
-            this.btnProducts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProducts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProducts.UseVisualStyleBackColor = true;
-            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
-            // 
-            // btnOrders
-            // 
-            this.btnOrders.FlatAppearance.BorderSize = 0;
-            this.btnOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOrders.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrders.Image = global::App.WindowsApp.Properties.Resources.Orders;
-            this.btnOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.Location = new System.Drawing.Point(3, 132);
-            this.btnOrders.Name = "btnOrders";
-            this.btnOrders.Size = new System.Drawing.Size(142, 60);
-            this.btnOrders.TabIndex = 9;
-            this.btnOrders.Text = "Orders";
-            this.btnOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnOrders.UseVisualStyleBackColor = true;
-            this.btnOrders.Click += new System.EventHandler(this.btnOrders_Click);
-            // 
-            // btnReports
-            // 
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.Image = global::App.WindowsApp.Properties.Resources.Report;
-            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(3, 198);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(142, 60);
-            this.btnReports.TabIndex = 10;
-            this.btnReports.Text = "Reports";
-            this.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReports.UseVisualStyleBackColor = true;
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
-            // 
-            // btnSync
-            // 
-            this.btnSync.FlatAppearance.BorderSize = 0;
-            this.btnSync.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSync.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSync.Image = global::App.WindowsApp.Properties.Resources.Sync;
-            this.btnSync.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSync.Location = new System.Drawing.Point(3, 264);
-            this.btnSync.Name = "btnSync";
-            this.btnSync.Size = new System.Drawing.Size(142, 60);
-            this.btnSync.TabIndex = 11;
-            this.btnSync.Text = "Sync";
-            this.btnSync.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSync.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSync.UseVisualStyleBackColor = true;
-            this.btnSync.Click += new System.EventHandler(this.btnSync_Click);
-            // 
-            // btnLogs
-            // 
-            this.btnLogs.FlatAppearance.BorderSize = 0;
-            this.btnLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogs.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogs.Image = global::App.WindowsApp.Properties.Resources.Logs;
-            this.btnLogs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogs.Location = new System.Drawing.Point(3, 330);
-            this.btnLogs.Name = "btnLogs";
-            this.btnLogs.Size = new System.Drawing.Size(142, 60);
-            this.btnLogs.TabIndex = 12;
-            this.btnLogs.Text = "Logs";
-            this.btnLogs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLogs.UseVisualStyleBackColor = true;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.FlatAppearance.BorderSize = 0;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSettings.Image = global::App.WindowsApp.Properties.Resources.Settings;
-            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(3, 396);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(142, 60);
-            this.btnSettings.TabIndex = 13;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSettings.UseVisualStyleBackColor = true;
+            flpRight.Controls.Add(pictureBox2);
+            flpRight.Controls.Add(lblUser);
+            flpRight.Dock = DockStyle.Right;
+            flpRight.Location = new Point(971, 0);
+            flpRight.Margin = new Padding(2, 2, 2, 2);
+            flpRight.Name = "flpRight";
+            flpRight.Size = new Size(95, 50);
+            flpRight.TabIndex = 1;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::App.WindowsApp.Properties.Resources.User;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(54, 44);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            pictureBox2.Image = Properties.Resources.User;
+            pictureBox2.Location = new Point(2, 2);
+            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(42, 33);
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // lblUser
+            // 
+            lblUser.AutoSize = true;
+            lblUser.Dock = DockStyle.Right;
+            lblUser.Location = new Point(48, 0);
+            lblUser.Margin = new Padding(2, 0, 2, 0);
+            lblUser.Name = "lblUser";
+            lblUser.Size = new Size(43, 37);
+            lblUser.TabIndex = 2;
+            lblUser.Text = "Admin";
+            lblUser.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // flpLeft
+            // 
+            flpLeft.Controls.Add(pbLogo);
+            flpLeft.Dock = DockStyle.Left;
+            flpLeft.Location = new Point(0, 0);
+            flpLeft.Margin = new Padding(2, 2, 2, 2);
+            flpLeft.Name = "flpLeft";
+            flpLeft.Size = new Size(155, 50);
+            flpLeft.TabIndex = 0;
             // 
             // pbLogo
             // 
-            this.pbLogo.Image = global::App.WindowsApp.Properties.Resources.BuildingStore;
-            this.pbLogo.Location = new System.Drawing.Point(3, 3);
-            this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(50, 44);
-            this.pbLogo.TabIndex = 0;
-            this.pbLogo.TabStop = false;
+            pbLogo.Image = Properties.Resources.BuildingStore;
+            pbLogo.Location = new Point(2, 2);
+            pbLogo.Margin = new Padding(2, 2, 2, 2);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Size = new Size(39, 33);
+            pbLogo.TabIndex = 0;
+            pbLogo.TabStop = false;
+            // 
+            // pnlContent
+            // 
+            pnlContent.Controls.Add(label1);
+            pnlContent.Dock = DockStyle.Fill;
+            pnlContent.Location = new Point(156, 50);
+            pnlContent.Margin = new Padding(2, 2, 2, 2);
+            pnlContent.Name = "pnlContent";
+            pnlContent.Size = new Size(910, 393);
+            pnlContent.TabIndex = 2;
+            pnlContent.Paint += panel1_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(0, 0);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 1;
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(24, 24);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { lblStatus });
+            statusStrip1.Location = new Point(0, 443);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new Padding(1, 0, 11, 0);
+            statusStrip1.Size = new Size(1066, 22);
+            statusStrip1.TabIndex = 0;
+            statusStrip1.Text = "statusStrip1";
+            statusStrip1.ItemClicked += statusStrip1_ItemClicked;
+            // 
+            // lblStatus
+            // 
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(1054, 17);
+            lblStatus.Spring = true;
+            lblStatus.Text = "Ready";
+            lblStatus.TextAlign = ContentAlignment.MiddleLeft;
+            lblStatus.Click += lblStatus_Click;
+            // 
+            // pnlSidebar
+            // 
+            pnlSidebar.Controls.Add(flowLayoutPanel1);
+            pnlSidebar.Dock = DockStyle.Left;
+            pnlSidebar.Location = new Point(0, 50);
+            pnlSidebar.Margin = new Padding(2, 2, 2, 2);
+            pnlSidebar.Name = "pnlSidebar";
+            pnlSidebar.Size = new Size(156, 393);
+            pnlSidebar.TabIndex = 3;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(btnDashboard);
+            flowLayoutPanel1.Controls.Add(btnProducts);
+            flowLayoutPanel1.Controls.Add(btnCustomer);
+            flowLayoutPanel1.Controls.Add(btnOrders);
+            flowLayoutPanel1.Controls.Add(btnReports);
+            flowLayoutPanel1.Controls.Add(btnSync);
+            flowLayoutPanel1.Controls.Add(btnLogs);
+            flowLayoutPanel1.Controls.Add(btnSettings);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(2, 2, 2, 2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(156, 393);
+            flowLayoutPanel1.TabIndex = 2;
+            // 
+            // btnDashboard
+            // 
+            btnDashboard.FlatAppearance.BorderSize = 0;
+            btnDashboard.FlatStyle = FlatStyle.Flat;
+            btnDashboard.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDashboard.Image = Properties.Resources.Dashboard;
+            btnDashboard.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.Location = new Point(2, 2);
+            btnDashboard.Margin = new Padding(2, 2, 2, 2);
+            btnDashboard.Name = "btnDashboard";
+            btnDashboard.Size = new Size(124, 45);
+            btnDashboard.TabIndex = 7;
+            btnDashboard.Text = "Dashboard";
+            btnDashboard.TextAlign = ContentAlignment.MiddleLeft;
+            btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnDashboard.UseVisualStyleBackColor = true;
+            btnDashboard.Click += btnDashboard_Click;
+            // 
+            // btnProducts
+            // 
+            btnProducts.FlatAppearance.BorderSize = 0;
+            btnProducts.FlatStyle = FlatStyle.Flat;
+            btnProducts.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnProducts.Image = Properties.Resources.Products;
+            btnProducts.ImageAlign = ContentAlignment.MiddleLeft;
+            btnProducts.Location = new Point(2, 51);
+            btnProducts.Margin = new Padding(2, 2, 2, 2);
+            btnProducts.Name = "btnProducts";
+            btnProducts.Size = new Size(110, 43);
+            btnProducts.TabIndex = 8;
+            btnProducts.Text = "Products";
+            btnProducts.TextAlign = ContentAlignment.MiddleLeft;
+            btnProducts.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnProducts.UseVisualStyleBackColor = true;
+            btnProducts.Click += btnProducts_Click;
+            // 
+            // btnOrders
+            // 
+            btnOrders.FlatAppearance.BorderSize = 0;
+            btnOrders.FlatStyle = FlatStyle.Flat;
+            btnOrders.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnOrders.Image = Properties.Resources.Orders;
+            btnOrders.ImageAlign = ContentAlignment.MiddleLeft;
+            btnOrders.Location = new Point(2, 147);
+            btnOrders.Margin = new Padding(2, 2, 2, 2);
+            btnOrders.Name = "btnOrders";
+            btnOrders.Size = new Size(110, 45);
+            btnOrders.TabIndex = 9;
+            btnOrders.Text = "Orders";
+            btnOrders.TextAlign = ContentAlignment.MiddleLeft;
+            btnOrders.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnOrders.UseVisualStyleBackColor = true;
+            btnOrders.Click += btnOrders_Click;
+            // 
+            // btnReports
+            // 
+            btnReports.FlatAppearance.BorderSize = 0;
+            btnReports.FlatStyle = FlatStyle.Flat;
+            btnReports.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnReports.Image = Properties.Resources.Report;
+            btnReports.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReports.Location = new Point(2, 196);
+            btnReports.Margin = new Padding(2, 2, 2, 2);
+            btnReports.Name = "btnReports";
+            btnReports.Size = new Size(110, 45);
+            btnReports.TabIndex = 10;
+            btnReports.Text = "Reports";
+            btnReports.TextAlign = ContentAlignment.MiddleLeft;
+            btnReports.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnReports.UseVisualStyleBackColor = true;
+            btnReports.Click += btnReports_Click;
+            // 
+            // btnSync
+            // 
+            btnSync.FlatAppearance.BorderSize = 0;
+            btnSync.FlatStyle = FlatStyle.Flat;
+            btnSync.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSync.Image = Properties.Resources.Sync;
+            btnSync.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSync.Location = new Point(2, 245);
+            btnSync.Margin = new Padding(2, 2, 2, 2);
+            btnSync.Name = "btnSync";
+            btnSync.Size = new Size(110, 45);
+            btnSync.TabIndex = 11;
+            btnSync.Text = "Sync";
+            btnSync.TextAlign = ContentAlignment.MiddleLeft;
+            btnSync.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSync.UseVisualStyleBackColor = true;
+            btnSync.Click += btnSync_Click;
+            // 
+            // btnLogs
+            // 
+            btnLogs.FlatAppearance.BorderSize = 0;
+            btnLogs.FlatStyle = FlatStyle.Flat;
+            btnLogs.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnLogs.Image = Properties.Resources.Logs;
+            btnLogs.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLogs.Location = new Point(2, 294);
+            btnLogs.Margin = new Padding(2, 2, 2, 2);
+            btnLogs.Name = "btnLogs";
+            btnLogs.Size = new Size(110, 45);
+            btnLogs.TabIndex = 12;
+            btnLogs.Text = "Logs";
+            btnLogs.TextAlign = ContentAlignment.MiddleLeft;
+            btnLogs.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnLogs.UseVisualStyleBackColor = true;
+            // 
+            // btnSettings
+            // 
+            btnSettings.FlatAppearance.BorderSize = 0;
+            btnSettings.FlatStyle = FlatStyle.Flat;
+            btnSettings.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSettings.Image = Properties.Resources.Settings;
+            btnSettings.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSettings.Location = new Point(2, 343);
+            btnSettings.Margin = new Padding(2, 2, 2, 2);
+            btnSettings.Name = "btnSettings";
+            btnSettings.Size = new Size(110, 45);
+            btnSettings.TabIndex = 13;
+            btnSettings.Text = "Settings";
+            btnSettings.TextAlign = ContentAlignment.MiddleLeft;
+            btnSettings.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnSettings.UseVisualStyleBackColor = true;
+            // 
+            // btnCustomer
+            // 
+            btnCustomer.FlatAppearance.BorderSize = 0;
+            btnCustomer.FlatStyle = FlatStyle.Flat;
+            btnCustomer.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCustomer.Image = Properties.Resources.Orders;
+            btnCustomer.ImageAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.Location = new Point(2, 98);
+            btnCustomer.Margin = new Padding(2);
+            btnCustomer.Name = "btnCustomer";
+            btnCustomer.Size = new Size(110, 45);
+            btnCustomer.TabIndex = 14;
+            btnCustomer.Text = "Customer";
+            btnCustomer.TextAlign = ContentAlignment.MiddleLeft;
+            btnCustomer.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnCustomer.UseVisualStyleBackColor = true;
+            btnCustomer.Click += btnCustomer_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1691, 620);
-            this.Controls.Add(this.pnlContent);
-            this.Controls.Add(this.pnlSidebar);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.pnlHeader);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.pnlHeader.ResumeLayout(false);
-            this.flpRight.ResumeLayout(false);
-            this.flpRight.PerformLayout();
-            this.flpLeft.ResumeLayout(false);
-            this.pnlContent.ResumeLayout(false);
-            this.pnlContent.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.pnlSidebar.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1066, 465);
+            Controls.Add(pnlContent);
+            Controls.Add(pnlSidebar);
+            Controls.Add(statusStrip1);
+            Controls.Add(pnlHeader);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "MainForm";
+            WindowState = FormWindowState.Maximized;
+            pnlHeader.ResumeLayout(false);
+            flpRight.ResumeLayout(false);
+            flpRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            flpLeft.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
+            pnlContent.ResumeLayout(false);
+            pnlContent.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            pnlSidebar.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
@@ -350,5 +388,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripStatusLabel lblStatus;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private Button btnCustomer;
     }
 }

@@ -17,6 +17,7 @@ namespace App.WindowsApp.Forms
     public partial class MainForm : Form
     {
         InMemoryProductService _productService = new InMemoryProductService();
+        InMemoryCustomerService _customerService = new InMemoryCustomerService();
         private readonly Dictionary<Type, UserControl> _views = new Dictionary<Type, UserControl>();
         public MainForm()
         {
@@ -45,7 +46,7 @@ namespace App.WindowsApp.Forms
 
         private void btnOrders_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void lblStatus_Click(object sender, EventArgs e)
@@ -74,17 +75,22 @@ namespace App.WindowsApp.Forms
             ShowView(() => new DashboardView());
         }
 
-        private void ShowView<T>(Func<T> factory) where T: UserControl
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            ShowView(() => new CustomerView(_customerService));
+        }
+
+        private void ShowView<T>(Func<T> factory) where T : UserControl
         {
             var key = typeof(T);
-            if (!_views.TryGetValue(key,out var view))
+            if (!_views.TryGetValue(key, out var view))
             {
                 view = factory();
                 view.Dock = DockStyle.Fill;
                 _views[key] = view;
             }
 
-            if(!pnlContent.Controls.Contains(view))
+            if (!pnlContent.Controls.Contains(view))
             {
                 pnlContent.Controls.Clear();
                 pnlContent.Controls.Add(view);

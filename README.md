@@ -229,37 +229,13 @@ Or press **F5** in Visual Studio.
 
 ---
 
-## 📊 Rubric Coverage
-
-| Criterion | Marks | Status |
-|---|---|---|
-| Project Setup & Architecture | 5/5 | ✅ |
-| Database & Connection | 5/5 | ✅ |
-| ADO.NET Data Access Layer | 8/8 | ✅ |
-| UI Navigation & CRUD | 10/10 | ✅ |
-| Validation & UX | 2/2 | ✅ |
-| Charting Module | 10/10 | ✅ |
-| Code Quality & Organization | 2/2 | ✅ |
-| Demo & Viva | 8/8 | ✅ |
-| **Base Total** | **50/50** | ✅ |
-| Search & Filter (Bonus) | +1 | ✅ |
-| Dashboard (Bonus) | +1 | ✅ |
-| Async Operation (Bonus) | +1 | ✅ |
-| Status Bar (Bonus) | +1 | ✅ |
-| Column Sorting (Bonus) | +1 | ✅ |
-| Loading Indicator (Bonus) | +1 | ✅ |
-| **Grand Total** | **55/50** | 🏆 |
-
----
-
 ## 👨‍💻 Author
 
 **Owais Ahmad**
 - 6th Semester BS Computer Science
 - Islamia University of Bahawalpur
-- 2x Stanford Code in Place Section Leader (2025 & 2026)
-- GitHub: [@YourUsername](https://github.com/YourUsername)
-- LinkedIn: [Owais Ahmad](https://linkedin.com/in/yourprofile)
+- GitHub: [@YourUsername](https://github.com/codeWithOwaisahmad)
+- LinkedIn: [Owais Ahmad](https://linkedin.com/in/owais-ahmad-ai)
 
 ---
 
@@ -268,7 +244,7 @@ Or press **F5** in Visual Studio.
 - **Course:** Advanced Programming (COSC-5136)
 - **Semester:** Spring 2026
 - **University:** Islamia University of Bahawalpur
-- **Project Type:** Semester Project (15% of course grade)
+- **Project Type:** Semester Project 
 
 ---
 

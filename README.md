@@ -234,7 +234,7 @@ Or press **F5** in Visual Studio.
 **Owais Ahmad**
 - 6th Semester BS Computer Science
 - Islamia University of Bahawalpur
-- GitHub: [@YourUsername](https://github.com/codeWithOwaisahmad)
+- GitHub: [codeWithOwaisAhmad](https://github.com/codeWithOwaisahmad)
 - LinkedIn: [Owais Ahmad](https://linkedin.com/in/owais-ahmad-ai)
 
 ---

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="FastBite.Core\FastBite.Core.csproj" />
+  <Project Path="FastBite.App\FastBite.App.csproj" />
+</Solution>
